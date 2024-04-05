@@ -1,6 +1,7 @@
 // pages/_app.js
 
 import "../../styles/style.css" // Import your global CSS file
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
 import TitleSection from '../components/TitleSection';
 import FeatureSection from '../components/FeaturesSection';
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
     <div>
       <Header />
       <TitleSection/>
+      <button type="button" class="btn">Base class</button>
             <FeatureSection/>
             <PricingSection/>
       <Component {...pageProps} />
